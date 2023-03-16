@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+        sphinx-version: ["4.*", "5.*", "6.*"]
+        exclude:
+          - python-version: "3.7"
+            sphinx-version: "6.*"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install project
+        run: pip install -e .[dev]
+      - name: "Install sphinx"
+        run: "pip install -U sphinx==${{ matrix.sphinx-version }}"
+      - name: run pre-commit
+        run: "pre-commit run --all"
+      - name: run tests (with coverage)
+        run: "pytest --cov invoke_plugin_for_sphinx --cov-report html --cov-report xml tests/"
+      - name: run diff-cover
+        run: "diff-cover --config-file pyproject.toml coverage.xml"
