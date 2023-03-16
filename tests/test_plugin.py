@@ -1,4 +1,4 @@
-# pylint: disable=missing-function-docstring,abstract-method
+# pylint: disable=missing-function-docstring
 
 """Tests for infra_basement.invoke.sphinx_extension"""
 
@@ -14,9 +14,9 @@ from invoke_plugin_for_sphinx import setup as setup_
 from invoke_plugin_for_sphinx._plugin import TaskDocumenter
 
 try:
-    import importlib.metadata as importlib_metadata  # type:ignore[import]
+    import importlib.metadata as importlib_metadata  # type:ignore
 except ImportError:
-    import importlib_metadata
+    import importlib_metadata  # type:ignore
 
 
 def test_setup(mocker: MockerFixture) -> None:

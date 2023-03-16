@@ -1,3 +1,5 @@
+# pylint: disable=abstract-method
+
 """Invoke plugin for sphinx."""
 
 from __future__ import annotations
@@ -9,9 +11,9 @@ from sphinx.application import Sphinx
 from sphinx.ext.autodoc import FunctionDocumenter
 
 try:
-    import importlib.metadata as importlib_metadata  # type:ignore[import]
+    import importlib.metadata as importlib_metadata  # type:ignore
 except ImportError:
-    import importlib_metadata  # type:ignore[import]
+    import importlib_metadata  # type:ignore
 
 __all__ = ("TaskDocumenter", "setup")
 
