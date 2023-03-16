@@ -10,8 +10,8 @@ import pytest
 from invoke import Task
 from pytest_mock import MockerFixture
 
-from invoke_plugin_for_spinx import setup as setup_
-from invoke_plugin_for_spinx._plugin import TaskDocumenter
+from invoke_plugin_for_sphinx import setup as setup_
+from invoke_plugin_for_sphinx._plugin import TaskDocumenter
 
 try:
     import importlib.metadata as importlib_metadata  # type:ignore[import]
@@ -21,7 +21,7 @@ except ImportError:
 
 def test_setup(mocker: MockerFixture) -> None:
     assert setup_(mocker.Mock()) == {
-        "version": importlib_metadata.version("invoke_plugin_for_spinx"),
+        "version": importlib_metadata.version("invoke_plugin_for_sphinx"),
         "parallel_read_safe": True,
     }
 

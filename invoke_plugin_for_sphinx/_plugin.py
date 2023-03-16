@@ -32,6 +32,6 @@ class TaskDocumenter(FunctionDocumenter):
 
 def setup(app: Sphinx) -> dict[str, Any]:
     """Setup the extension."""
-    version = importlib_metadata.version("invoke_plugin_for_spinx")
+    version = importlib_metadata.version("invoke_plugin_for_sphinx")
     app.add_autodocumenter(TaskDocumenter)
     return {"version": version, "parallel_read_safe": True}
