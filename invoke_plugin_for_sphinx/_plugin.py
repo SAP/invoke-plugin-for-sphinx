@@ -12,7 +12,7 @@ from sphinx.ext.autodoc import FunctionDocumenter
 
 try:
     import importlib.metadata as importlib_metadata  # type:ignore
-except ImportError:
+except ImportError:  # pragma: no cover
     import importlib_metadata  # type:ignore
 
 __all__ = ("TaskDocumenter", "setup")

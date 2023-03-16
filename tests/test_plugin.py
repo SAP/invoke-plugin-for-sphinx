@@ -13,15 +13,14 @@ from pytest_mock import MockerFixture
 from invoke_plugin_for_sphinx import setup as setup_
 from invoke_plugin_for_sphinx._plugin import TaskDocumenter
 
-try:
-    import importlib.metadata as importlib_metadata  # type:ignore
-except ImportError:
-    import importlib_metadata  # type:ignore
-
 
 def test_setup(mocker: MockerFixture) -> None:
+    mocker.patch(
+        "invoke_plugin_for_sphinx._plugin.importlib_metadata.version",
+        return_value="1.0.0",
+    )
     assert setup_(mocker.Mock()) == {
-        "version": importlib_metadata.version("invoke_plugin_for_sphinx"),
+        "version": "1.0.0",
         "parallel_read_safe": True,
     }
 
