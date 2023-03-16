@@ -70,6 +70,7 @@ add_imports = ["from __future__ import annotations"]
 
 [tool.mypy]
 # main config
+python_version = 3.7
 strict_optional = true
 warn_incomplete_stub = true
 warn_no_return = true
@@ -89,6 +90,7 @@ min-public-methods = 0
 
 [tool.pylint.master]
 max-line-length = 100
+py-version = [3, 7]
 
 [tool.pylint."messages control"]
 enable = ["all"]
