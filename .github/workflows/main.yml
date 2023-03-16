@@ -24,7 +24,7 @@ jobs:
       - name: Install project
         run: pip install -e .[dev]
       - name: "Install sphinx"
-        run: "pip install -U ${{ matrix.sphinx-version }}"
+        run: "pip install -U sphinx==${{ matrix.sphinx-version }}"
       - name: run pre-commit
         run: "pre-commit run --all"
       - name: run tests (with coverage)
