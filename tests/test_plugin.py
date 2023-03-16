@@ -1,4 +1,4 @@
-# pylint: disable=missing-function-docstring
+# pylint: disable=missing-function-docstring,abstract-method
 
 """Tests for infra_basement.invoke.sphinx_extension"""
 
