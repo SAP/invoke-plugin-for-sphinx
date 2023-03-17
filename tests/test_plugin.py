@@ -4,6 +4,9 @@
 
 from __future__ import annotations
 
+import shutil
+import subprocess
+from pathlib import Path
 from typing import Any
 
 import pytest
@@ -32,3 +35,22 @@ def test_task_documenter_can_document_member(member: Any, can_document: bool) ->
     assert (
         TaskDocumenter.can_document_member(member, "foo", False, None) == can_document
     )
+
+
+def test_render() -> None:
+    build_dir = Path("tests/test_project/docs/_build")
+    if build_dir.exists():
+        shutil.rmtree(build_dir)
+    subprocess.run(
+        [
+            "sphinx-build",
+            "-a",
+            "-W",
+            "tests/test_project/docs/",
+            "tests/test_project/docs/_build",
+        ],
+        check=True,
+    )
+
+    index = (build_dir / "index.html").read_text(encoding="utf-8")
+    assert "A VERY SPECIAL DOCSTRING." in index

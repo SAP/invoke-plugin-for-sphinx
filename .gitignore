@@ -62,3 +62,7 @@ dmypy.json
 ### VisualStudioCode ###
 .vscode/*
 .history/
+
+
+### Generated files ###
+tests/test_project/docs/_build
