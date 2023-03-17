@@ -13,7 +13,7 @@ Add the plugin to the extensions list:
 extensions = ["invoke_plugin_for_sphinx"]
 ```
 
-Then you can use `automodule` as usual.
+Then you can use `.. automodule::` as usual.
 Behind the scenes, the function documenter of `autodoc` is extended to also handle tasks equal to functions.
 Therefore the same configurations, limitations and features apply.
 
