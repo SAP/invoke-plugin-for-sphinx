@@ -1,3 +1,8 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/invoke-plugin-for-sphinx)](https://api.reuse.software/info/github.com/SAP/invoke-plugin-for-sphinx)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![PyPI version](https://badge.fury.io/py/invoke-plugin-for-sphinx.svg)](https://badge.fury.io/py/invoke-plugin-for-sphinx)
+
 # Invoke Plugin for Sphinx
 This is a plugin which allows the documentation of invoke tasks with sphinx `autodoc`.
 An invoke task looks like a normal function but the `@task` decorator creates a `Task` object behind the scenes.
