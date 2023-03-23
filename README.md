@@ -17,6 +17,14 @@ Then you can use `.. automodule::` as usual.
 Behind the scenes, the function documenter of `autodoc` is extended to also handle tasks equal to functions.
 Therefore the same configurations, limitations and features apply.
 
+## Build and Publish
+
+This project uses `setuptools` as the dependency management and build tool.
+To publish a new release, follow these steps:
+* Update the version in the `pyproject.toml`
+* Add an entry in the changelog
+* Push a new tag like `vX.X.X` to trigger the release
+
 ## Support, Feedback, Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/invoke-plugin-for-sphinx/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
