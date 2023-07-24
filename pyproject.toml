@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "invoke-plugin-for-sphinx"
-version = "1.0.0"
+version = "1.1.0"
 description = "Sphinx plugin which can render invoke tasks with autodoc"
 authors = [{ name = "Kai Mueller", email = "kai.mueller01@sap.com"}]
 readme = "README.md"
