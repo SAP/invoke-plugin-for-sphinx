@@ -13,6 +13,7 @@ jobs:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11"]
         sphinx-version: ["7.0.*", "7.*"]
+        invoke-version: ["2.0.*", "2.*"]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,7 +25,7 @@ jobs:
       - name: Install project
         run: pip install -e .[dev]
       - name: "Install sphinx"
-        run: "pip install -U sphinx==${{ matrix.sphinx-version }}"
+        run: "pip install -U sphinx==${{ matrix.sphinx-version }} invoke==${{ matrix.invoke-version }}"
       - name: run pre-commit
         run: "pre-commit run --all"
       - name: run tests (with coverage)
