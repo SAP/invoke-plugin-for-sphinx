@@ -19,7 +19,7 @@ from invoke_plugin_for_sphinx._plugin import TaskDocumenter
 
 def test_setup(mocker: MockerFixture) -> None:
     mocker.patch(
-        "invoke_plugin_for_sphinx._plugin.importlib_metadata.version",
+        "invoke_plugin_for_sphinx._plugin.version",
         return_value="1.0.0",
     )
     assert setup_(mocker.Mock()) == {
