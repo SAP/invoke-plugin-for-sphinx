@@ -76,7 +76,6 @@ warn_no_return = true
 warn_unreachable = true
 strict = true
 warn_unused_ignores = false
-python_version = "3.8"
 # output
 pretty = true
 show_column_numbers = true
