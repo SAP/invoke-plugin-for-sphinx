@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+* Add support for sphinx 8
+
 ## 2.0.0
 
 * Drop support for sphinx 4, 5 and 6
