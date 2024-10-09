@@ -1,5 +1,9 @@
 # Changelog
 
+# 3.0.0
+* Support python 3.13
+* Dropped support for python 3.8
+
 ## 2.1.0
 
 * Add support for sphinx 8
