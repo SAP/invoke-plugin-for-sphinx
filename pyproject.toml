@@ -54,7 +54,7 @@ test = [
     "pytest==8.3.3",
     "pytest-mock==3.14.0",
     "pytest-cov==6.0.0",
-    "coverage==7.6.4",
+    "coverage==7.6.8",
     "diff-cover==9.2.0",
 ]
 
