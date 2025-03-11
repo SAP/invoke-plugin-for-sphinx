@@ -55,7 +55,7 @@ test = [
     "pytest-mock==3.14.0",
     "pytest-cov==6.0.0",
     "coverage==7.6.12",
-    "diff-cover==9.2.3",
+    "diff-cover==9.2.4",
 ]
 
 [tool.setuptools.packages.find]
