@@ -36,3 +36,8 @@ repos:
         entry: flake8
         language: system
         types: [python]
+      - id: yesqa
+        name: yesqa
+        entry: yesqa
+        language: system
+        types: [python]
