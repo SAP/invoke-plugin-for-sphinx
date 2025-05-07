@@ -2,6 +2,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![PyPI version](https://badge.fury.io/py/invoke-plugin-for-sphinx.svg)](https://badge.fury.io/py/invoke-plugin-for-sphinx)
+[![Coverage Status](https://coveralls.io/repos/github/SAP/invoke-plugin-for-sphinx/badge.svg)](https://coveralls.io/github/SAP/invoke-plugin-for-sphinx)
 
 # Invoke Plugin for Sphinx
 This is a plugin which allows the documentation of invoke tasks with sphinx `autodoc`.
