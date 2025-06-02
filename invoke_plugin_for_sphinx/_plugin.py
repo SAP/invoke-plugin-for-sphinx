@@ -1,5 +1,3 @@
-# pylint: disable=abstract-method
-
 """Invoke plugin for sphinx."""
 
 from __future__ import annotations
@@ -10,6 +8,7 @@ from typing import Any
 from invoke.tasks import Task
 from sphinx.application import Sphinx
 from sphinx.ext.autodoc import FunctionDocumenter
+from typing_extensions import override
 
 __all__ = ("TaskDocumenter", "setup")
 
@@ -21,6 +20,7 @@ class TaskDocumenter(FunctionDocumenter):
     directivetype = "function"
 
     @classmethod
+    @override
     def can_document_member(
         cls, member: Any, membername: str, isattr: bool, parent: Any
     ) -> bool:
