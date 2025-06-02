@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from importlib.metadata import version
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
 from invoke.tasks import Task
 from sphinx.application import Sphinx
