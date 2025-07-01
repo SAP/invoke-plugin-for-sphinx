@@ -77,7 +77,7 @@ warn_incomplete_stub = true
 warn_no_return = true
 warn_unreachable = true
 strict = true
-warn_unused_ignores = false
+warn_unused_ignores = true
 enable_error_code = ["explicit-override", "possibly-undefined", "ignore-without-code", "deprecated"]
 strict_bytes = true
 # output
