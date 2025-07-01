@@ -11,6 +11,7 @@ ignore=
     # conflict with black formatter
     W503,E203,
 per-file-ignores =
+    tests/*:FTP300,FTP301,FTP302,FTP303,FTP304
     tests/test_project/*:FTP040
 
 ftp-python-version = 3.9.0

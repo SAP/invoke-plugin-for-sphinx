@@ -1,6 +1,6 @@
 # pylint: disable=missing-function-docstring
 
-"""Tests for infra_basement.invoke.sphinx_extension"""
+"""Tests for infra_basement.invoke.sphinx_extension."""
 
 from __future__ import annotations
 
