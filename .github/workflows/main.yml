@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.13"
       - name: Install project
-        run: pip install -e .[dev,test]
+        run: pip install --group test --group dev -e .
       - name: run pre-commit
         run: "pre-commit run --all"
   ci-test:
@@ -46,7 +46,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install project
-        run: pip install -e .[test]
+        run: pip install --group test -e .
       - name: "Install sphinx"
         run: "pip install -U sphinx==${{ matrix.sphinx-version }} invoke==${{ matrix.invoke-version }}"
       - name: run tests (with coverage)

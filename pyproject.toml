@@ -40,7 +40,7 @@ license-files = ["LICENSE"]
 "Issue Tracker" = "https://github.com/SAP/invoke-plugin-for-sphinx/issues"
 "Changelog" = "https://github.com/SAP/invoke-plugin-for-sphinx/blob/main/CHANGELOG.md"
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "pre-commit==4.3.0",
     "pylint==3.3.8",
