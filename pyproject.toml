@@ -64,6 +64,7 @@ dev = [
     "flake8-tergeo==25.8.13.0",
     "yesqa==1.5.0",
     "pyupgrade==3.20.0",
+    "uv==0.8.11",
 ]
 test = [
     "pytest==8.4.1",
@@ -150,3 +151,6 @@ branch = true
 [tool.diff_cover]
 include_untracked = true
 fail_under = 90
+
+[tool.uv]
+default-groups = []
