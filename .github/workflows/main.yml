@@ -12,9 +12,6 @@ permissions:
   id-token: write
   pull-requests: write
 
-env:
-  UV_SYSTEM_PYTHON: 1
-
 jobs:
   ci-pre-commit:
     runs-on: ubuntu-latest
