@@ -11,6 +11,14 @@ repos:
       - id: reuse
   - repo: local
     hooks:
+      - id: uv-lock
+        name: uv-lock
+        entry: uv lock
+        args: [--check]
+        language: system
+        files: ^(uv\.lock|pyproject\.toml)$
+        pass_filenames: false
+        require_serial: true
       - id: black
         name: black
         entry: black
