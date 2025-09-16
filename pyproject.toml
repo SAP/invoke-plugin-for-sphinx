@@ -121,8 +121,6 @@ no-docstring-rgx = "^_"
 min-public-methods = 0
 
 [tool.pylint.master]
-max-line-length = 100
-py-version = 3.9
 load-plugins = [
     "invoke_plugin_for_pylint",
     "pylint_per_file_ignores",
@@ -142,6 +140,8 @@ load-plugins = [
     "pylint.extensions.set_membership",
     "pylint.extensions.typing",
 ]
+max-line-length = 100
+py-version = 3.9
 
 [tool.pylint."messages control"]
 disable = [
