@@ -22,6 +22,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Documentation",
     "Topic :: Documentation :: Sphinx",
     "Typing :: Typed",
@@ -46,7 +47,7 @@ license-files = [
 name = "invoke-plugin-for-sphinx"
 readme = "README.md"
 requires-python = ">=3.9,<4"
-version = "3.0.0"
+version = "3.1.0"
 
 [project.urls]
 Changelog = "https://github.com/SAP/invoke-plugin-for-sphinx/blob/main/CHANGELOG.md"

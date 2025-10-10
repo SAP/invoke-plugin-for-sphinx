@@ -26,7 +26,7 @@ Therefore the same configurations, limitations and features apply.
 ## Development
 This project uses `uv`.
 To setup a venv for development use
-`python3.13 -m venv venv && pip install uv && uv sync --all-groups && rm -rf venv/`.
+`python3.14 -m venv venv && pip install uv && uv sync --all-groups && rm -rf venv/`.
 Then use `source .venv/bin/activate` to activate your venv.
 
 ## Build and Publish
