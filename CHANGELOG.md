@@ -1,5 +1,8 @@
 # Changelog
 
+# 3.1.0
+* Support python 3.14
+
 # 3.0.0
 * Support python 3.13
 * Dropped support for python 3.8
