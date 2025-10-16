@@ -17,7 +17,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -46,8 +45,8 @@ license-files = [
 ]
 name = "invoke-plugin-for-sphinx"
 readme = "README.md"
-requires-python = ">=3.9,<4"
-version = "3.1.0"
+requires-python = ">=3.10,<4"
+version = "4.0.0"
 
 [project.urls]
 Changelog = "https://github.com/SAP/invoke-plugin-for-sphinx/blob/main/CHANGELOG.md"
@@ -101,6 +100,10 @@ enable_error_code = [
     "possibly-undefined",
     "ignore-without-code",
     "deprecated",
+    "redundant-self",
+    "truthy-iterable",
+    "unused-awaitable",
+    "exhaustive-match",
 ]
 pretty = true
 show_column_numbers = true
@@ -142,7 +145,7 @@ load-plugins = [
     "pylint.extensions.typing",
 ]
 max-line-length = 100
-py-version = 3.9
+py-version = "3.10"
 
 [tool.pylint."messages control"]
 disable = [

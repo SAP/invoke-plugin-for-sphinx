@@ -1,5 +1,8 @@
 # Changelog
 
+# 4.0.0
+* Removed support for python 3.9
+
 # 3.1.0
 * Support python 3.14
 
