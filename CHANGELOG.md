@@ -1,5 +1,8 @@
 # Changelog
 
+# 4.1.0
+* Add support for sphinx 9
+
 # 4.0.0
 * Removed support for python 3.9
 
