@@ -61,9 +61,9 @@ jobs:
       - name: Install sphinx
         run: uv pip install -U sphinx==${{ matrix.sphinx-version }} invoke==${{ matrix.invoke-version }}
       - name: run tests (with coverage)
-        run: uv run --frozen pytest --cov invoke_plugin_for_sphinx --cov tests --cov-report xml tests/
+        run: uv run --no-sync pytest --cov invoke_plugin_for_sphinx --cov tests --cov-report xml tests/
       - name: run diff-cover
-        run: uv run --frozen diff-cover --config-file pyproject.toml coverage.xml
+        run: uv run --no-sync diff-cover --config-file pyproject.toml coverage.xml
       - name: Rename coverage file
         run: |
           UUID=$(uuidgen)
