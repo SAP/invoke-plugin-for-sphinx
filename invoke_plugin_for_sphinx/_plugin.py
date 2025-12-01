@@ -29,13 +29,13 @@ class TaskDocumenter(FunctionDocumenter):
         return isinstance(member, Task)
 
 
-def _patch_for_sphinx9() -> None:
+def _patch_for_sphinx9() -> None:  # pragma: no cover
     # pylint: disable=import-outside-toplevel,protected-access,import-private-name
     from sphinx.ext.autodoc._dynamic import _member_finder
 
     old_func = _member_finder._best_object_type_for_member
 
-    def _patch(*args: Any, **kwargs: Any) -> Any:  # pragma: no cover
+    def _patch(*args: Any, **kwargs: Any) -> Any:
         result = old_func(*args, **kwargs)
         member = args[0] if args else kwargs.get("member")
         return "function" if result is None and isinstance(member, Task) else result
