@@ -5,6 +5,7 @@ from __future__ import annotations
 from importlib.metadata import version
 from typing import Any
 
+import sphinx
 from invoke.tasks import Task
 from sphinx.application import Sphinx
 from sphinx.ext.autodoc import FunctionDocumenter
@@ -28,8 +29,25 @@ class TaskDocumenter(FunctionDocumenter):
         return isinstance(member, Task)
 
 
+def _patch_for_sphinx9() -> None:
+    # pylint: disable=import-outside-toplevel,protected-access,import-private-name
+    from sphinx.ext.autodoc._dynamic import _member_finder
+
+    old_func = _member_finder._best_object_type_for_member
+
+    def _patch(*args: Any, **kwargs: Any) -> Any:
+        result = old_func(*args, **kwargs)
+        return "function" if result is None and isinstance(args[0], Task) else result
+
+    _member_finder._best_object_type_for_member = _patch
+
+
 def setup(app: Sphinx) -> dict[str, Any]:
     """Setup the extension."""
-    our_version = version("invoke_plugin_for_sphinx")
+    # deprecated with sphinx 9.0, but still works for now
     app.add_autodocumenter(TaskDocumenter)
-    return {"version": our_version, "parallel_read_safe": True}
+
+    if sphinx.version_info[0] >= 9:
+        _patch_for_sphinx9()
+
+    return {"version": version("invoke_plugin_for_sphinx"), "parallel_read_safe": True}
