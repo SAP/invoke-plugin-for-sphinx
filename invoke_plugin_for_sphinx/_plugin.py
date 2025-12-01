@@ -35,7 +35,7 @@ def _patch_for_sphinx9() -> None:
 
     old_func = _member_finder._best_object_type_for_member
 
-    def _patch(*args: Any, **kwargs: Any) -> Any:
+    def _patch(*args: Any, **kwargs: Any) -> Any:  # pragma: no cover
         result = old_func(*args, **kwargs)
         member = args[0] if args else kwargs.get("member")
         return "function" if result is None and isinstance(member, Task) else result
