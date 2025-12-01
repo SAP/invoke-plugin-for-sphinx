@@ -29,7 +29,7 @@ class TaskDocumenter(FunctionDocumenter):
         return isinstance(member, Task)
 
 
-def _patch_for_sphinx9() -> None:  # pragma: no cover
+def _patch_for_sphinx9() -> None:
     # pylint: disable=import-outside-toplevel,protected-access,import-private-name
     from sphinx.ext.autodoc._dynamic import _member_finder
 
