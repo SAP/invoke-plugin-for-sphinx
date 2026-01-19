@@ -6,6 +6,6 @@ from invoke import task
 
 
 @task
-def dummy(ctx):  # type:ignore[no-untyped-def]
+def dummy(ctx):  # type: ignore[no-untyped-def]
     """A VERY SPECIAL DOCSTRING."""
     ctx.run("echo hello world")
