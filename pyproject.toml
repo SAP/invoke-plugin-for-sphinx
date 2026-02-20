@@ -64,6 +64,7 @@ dev = [
     "pyupgrade==3.21.2",
     "uv==0.10.4",
     "toml-sort==0.24.3",
+    "towncrier==25.8.0",
 ]
 test = [
     "pytest==9.0.2",
