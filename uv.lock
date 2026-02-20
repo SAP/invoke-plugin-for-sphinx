@@ -602,7 +602,6 @@ wheels = [
 
 [[package]]
 name = "invoke-plugin-for-sphinx"
-version = "4.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "invoke" },
