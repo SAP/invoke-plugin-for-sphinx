@@ -2,6 +2,13 @@
 
 <!-- towncrier release notes start -->
 
+## 4.2.0 (2026-02-20)
+
+### Changes
+
+- Updated the release actions
+
+
 # 4.1.0
 * Add support for sphinx 9
 
