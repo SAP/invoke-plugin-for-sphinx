@@ -66,6 +66,7 @@ repos:
         language: system
         types: [toml]
         args: [--in-place]
+        exclude: ^uv.lock$
   - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
     rev: 0.2.3
     hooks:
