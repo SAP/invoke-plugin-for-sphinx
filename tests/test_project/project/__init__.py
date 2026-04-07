@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from invoke import task
+from invoke.tasks import task
 
 
 @task
