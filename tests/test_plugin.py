@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 import pytest
-from invoke import Task
+from invoke.tasks import Task
 from pytest_mock import MockerFixture
 
 from invoke_plugin_for_sphinx import setup as setup_
