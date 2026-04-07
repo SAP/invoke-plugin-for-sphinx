@@ -2,6 +2,17 @@
 
 <!-- towncrier release notes start -->
 
+## 5.0.0 (2026-04-07)
+
+### Removals
+
+- Removed support for sphinx 7.x
+
+### Features
+
+- Added support for invoke 3.x
+
+
 ## 4.2.0 (2026-02-20)
 
 ### Changes
