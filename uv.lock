@@ -684,7 +684,7 @@ test = [
 [package.metadata]
 requires-dist = [
     { name = "invoke", specifier = ">=2.1,<4" },
-    { name = "sphinx", specifier = ">=7,<10" },
+    { name = "sphinx", specifier = ">=8,<10" },
     { name = "typing-extensions", specifier = "~=4.4" },
 ]
 

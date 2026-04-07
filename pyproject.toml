@@ -25,7 +25,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "sphinx>=7,<10",
+    "sphinx>=8,<10",
     "invoke>=2.1,<4",
     "typing-extensions~=4.4",
 ]
