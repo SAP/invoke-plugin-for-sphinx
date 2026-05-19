@@ -54,7 +54,7 @@ Changelog = "https://github.com/SAP/invoke-plugin-for-sphinx/blob/main/CHANGELOG
 dev = [
     "pre-commit==4.6.0",
     "pylint==4.0.5",
-    "black==26.3.1",
+    "black==26.5.0",
     "isort==8.0.1",
     "mypy==2.1.0",
     "flake8==7.3.0",
