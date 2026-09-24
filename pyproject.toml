@@ -24,8 +24,8 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "sphinx>=8,<10",
-    "invoke>=2.1,<4",
+    "sphinx>=9,<10",
+    "invoke>=3,<4",
     "typing-extensions~=4.4",
 ]
 description = "Sphinx plugin which can render invoke tasks with autodoc"
