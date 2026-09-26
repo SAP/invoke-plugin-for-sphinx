@@ -15,7 +15,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
@@ -25,8 +24,8 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "sphinx>=8,<10",
-    "invoke>=2.1,<4",
+    "sphinx>=9,<10",
+    "invoke>=3,<4",
     "typing-extensions~=4.4",
 ]
 description = "Sphinx plugin which can render invoke tasks with autodoc"
@@ -44,7 +43,7 @@ license-files = [
 ]
 name = "invoke-plugin-for-sphinx"
 readme = "README.md"
-requires-python = ">=3.10,<4"
+requires-python = ">=3.11,<4"
 
 [project.urls]
 Changelog = "https://github.com/SAP/invoke-plugin-for-sphinx/blob/main/CHANGELOG.md"
@@ -143,7 +142,7 @@ load-plugins = [
     "pylint.extensions.typing",
 ]
 max-line-length = 100
-py-version = "3.10"
+py-version = "3.11"
 
 [tool.pylint."messages control"]
 disable = [
