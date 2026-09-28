@@ -2,6 +2,15 @@
 
 <!-- towncrier release notes start -->
 
+## 6.0.0 (2026-09-28)
+
+### Removals
+
+- Removed support for invoke 2
+- Removed support for python3.10
+- Removed support for sphinx 8
+
+
 ## 5.0.0 (2026-04-07)
 
 ### Removals
