@@ -71,7 +71,7 @@ test = [
     "pytest-cov==7.1.0",
     "coverage==7.17.3",
     "diff-cover==11.0.1",
-    "pytest-randomly==5.0.0",
+    "pytest-randomly==5.1.0",
 ]
 
 [tool.coverage.report]
